@@ -8,7 +8,6 @@ from .models import PageMeta, TitleMeta
 
 
 class PageMetaAdmin(PageExtensionAdmin):
-    raw_id_fields = ('og_author',)
     fieldsets = (
         (None, {'fields': ('image',)}),
         (_(u'OpenGraph'), {'fields': ('og_type',
